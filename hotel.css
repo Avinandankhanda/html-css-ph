@@ -21,6 +21,7 @@ img{
 }
 #image1{
     padding: 0%;
+    height: 90vh;
 }
 #image2{
     height: 50%;
@@ -29,4 +30,11 @@ img{
 }
 #img2l{
     padding: 0%;
+}
+#chhobi{
+    height: 90vh;
+}
+#chhobi .item img{
+    height: 100%;
+    object-fit: cover;
 }
