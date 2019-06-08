@@ -1,0 +1,15 @@
+.car {
+    background: teal;
+}
+#toyota {
+    font-size: 24px;
+}
+#landrover{
+    background: wheat;
+    font-size: 26px;
+    background-image: url('image.jpg'), linear-gradient(red, black);
+    background-blend-mode: overlay;
+}
+#jagwar {
+
+}

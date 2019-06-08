@@ -1,0 +1,78 @@
+<html>
+<head></head>
+<body>
+    
+
+
+	<title>Plane Landing Animation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for smaller screens -->
+	<style type="text/css">
+		@keyframes change {
+			0%{
+				background-image: url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?w=1366);
+				background-position: top;
+			}
+			20% { 
+				background-image: url(https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?w=1366);
+				background-position: bottom; /*to the background image move from top to bottom*/
+			}
+			35%, 45%{/*use multiple percentages to make the keyframe stay without losing it's opacity*/
+				background-image: url(https://images.unsplash.com/photo-1469536526925-9b5547cd5d68?w=1366);
+			}
+			55%, 65%{
+				background-image: url(https://images.unsplash.com/photo-1475319122043-5ca9eeceefaf?w=1366);
+			}
+			75%, 100% {
+				background-image: url(https://images.unsplash.com/photo-1500043357865-c6b8827edf10?w=1366);
+			}
+		}
+		body {
+			background-size: fill;
+			background-position: center;
+			animation: change 18.5s 1 linear;
+			overflow: hidden; /*dont show the plane outsite the window*/
+		}
+		@keyframes magic {
+			0%{
+				transform: scale(0.35) translate(120em, -35em) rotateZ(-20deg);
+				/*smaller size. initial position top right corner(negative y, high positive x). high rotation*/
+			}
+			70%{
+				transform: scale(0.5) translate(0em, 25em) rotateZ(-10deg);
+				/*bottom middle(low positve y, 0 x). lesser rotation*/
+			}
+			100%{
+				transform: scale(0.5) translate(-120em, 25em) rotateZ(-5deg);
+				/*bottom left corner(positve y, high negative x). least rotation*/
+			}
+		}
+		#tesla{
+			display: block;
+			margin: 0 auto; /*to put the plane in the middle*/
+			width: 70%;
+			animation: magic 18.5s 1 linear;
+		}
+		img{
+			object-position: center;
+			object-size: cover;
+			width: 100%;
+			transform: rotateY(180deg);
+		}
+	</style>
+
+
+
+<ul style="line-height: .8em">
+	<li>move plane from top right to bottom center</li>
+	<li>then, move it to bottom left</li>
+	<li>lessen the z rotation as it reaches ground</li>
+	<li>scale down as it reaches ground</li>
+	<li>parallel animation to change the background corresponding to the position of the plane.</li>
+	<li>add an audio of same duration of these 2 animations</li>
+</ul>
+<div id="tesla">
+	<img src="https://b.kisscc0.com/20180705/bw/kisscc0-airplane-download-document-presentation-aircraft-5b3e476d1b2bf0.5825794115308081731113.png">
+	<audio src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/airplane-landing_z1Zx33N_.mp3" autoplay="">PLay</audio>
+</div>
+
+</body>

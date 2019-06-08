@@ -1,0 +1,22 @@
+input,button,textarea{
+    display: block;
+    height: 50px;
+    width: 400px;
+    padding: 5px 6px;
+    margin: 9px;
+    /* border:5px solid; */
+    border-radius: 10px;
+}
+form{
+    margin-left: 35%;
+    border: 5px solid tomato;
+}
+#num::-webkit-inner-spin-button,
+#num::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+h1{
+    text-align: center;
+}

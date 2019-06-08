@@ -1,0 +1,21 @@
+div{
+    font-size: 24px;
+    font-weight: 20px;
+}
+span{
+    color: crimson;
+}
+.glyphicon-heart-empty{
+    color: plum;
+}
+#pwd,#password{
+    position: relative;
+    width: 400px;
+}
+#show-password{
+    position: absolute;
+    height: 100%;
+    top:4px;
+    content:''; 
+    right:2px;
+}

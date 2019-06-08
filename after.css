@@ -1,0 +1,44 @@
+#after{
+    position: relative;
+    display: inline-block;
+}
+#after2{
+    color: cyan;
+    z-index: 1;
+    font-size: 340px;
+}
+#after2:hover{
+    color: blue;
+}
+#after3{
+    position: absolute;
+    width: 0%;
+    background-image: url(https://sample-videos.com/img/Sample-jpg-image-500kb.jpg);
+    height: 100%;
+    bottom: 0;
+    z-index: -1;
+    transition: width 1s;
+    opacityL:0.5;
+}
+#after2:hover+#after3{
+    width: 100%;
+}
+#after4{
+    position: absolute;
+    width: 100%;
+    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg?w968h681);
+    height: 0%;
+    bottom: 0;
+    z-index: -5 ;
+    transition: height 1s;    
+    opacity: 0.9;
+}
+#after2:hover~#after4{
+     height:100%;
+}
+#color{
+    background-image: linear-gradient(30deg,red,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-size: 30px;
+}

@@ -1,0 +1,38 @@
+.fixed-image{
+    background-image: url(https://images.unsplash.com/photo-1553194642-29b272a173b9);
+    height: 100%;
+    width:50%;
+    background-size: cover;
+    display: inline-block;
+    position: fixed;
+
+}
+.fixed-image h1 {
+    color: #222;
+    font-size: 60px;
+    line-height: 100vh;
+    text-align-last: center;
+}
+h1::selection, p::selection {
+    background: #0000;
+    color: aqua;
+}
+.moving-text {
+    width:45%;
+    float : right;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+a {
+    font-size: 30px;
+}
+a:visited{
+    text-decoration: none;
+    color: chartreuse;
+}
+body{
+    margin: 0px;
+}

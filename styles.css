@@ -1,0 +1,39 @@
+/* external styles */
+body {
+    background: #eee;
+    border: 5px dashed indigo;
+}
+h1{color:royalblue; 
+    text-align:center;
+    font-family: Arial;
+    font-size:100px;
+    font-style: italic;
+    text-transform: capitalize;
+    text-shadow: 11px 12px 4px #fc3;
+ }
+ p {
+    font-family: 'Satisfy', cursive;
+     font-size: 35px; 
+     background-image: linear-gradient(to right, #e6e2e2b8, #6dd5fa42, #f3e5477a), url(image.jpg);
+     margin: 20px auto;
+     text-shadow: 1px 2px 4px #fc3;
+     box-shadow: -4px -5px 4px #fc3;
+     border: 2px solid black;
+     border-left-width: 20px;
+     border-right-width: 20px;
+     border-bottom-color: aquamarine;
+     border-top-style: dotted;
+     padding: 10px 20px 40px 15px;
+ }
+ol {
+    font-family:helvetica; 
+}
+
+img { 
+    /* take element to the center */
+    margin: auto;
+    display: block;
+    box-shadow: -26px -26px 10px black;
+    border-radius: 5px 10px 20px 30px;
+
+}

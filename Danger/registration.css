@@ -1,0 +1,45 @@
+h1 , h2 ,h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Merriweather'!important;
+}
+img{
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    left: 0%;
+    top: 0px;
+}
+p{
+    text-align: center;
+}
+#logo{
+height: 150px
+}
+#header{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+/* #invoice {
+    text-align: left!important;
+    position: relative;
+    right: 0%
+} */
+#invoice p{
+    text-align: right;
+}
+#form_body{
+    font-size: 18px;
+    line-height: 50px;
+    padding: 10px 50px;
+    margin:40px;
+    font-weight: bold;
+}
+#form_footer{
+    margin-top: 40px;
+}
+#fees p{
+    text-align: left;
+    margin-left: 50px; 
+}

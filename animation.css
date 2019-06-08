@@ -1,0 +1,63 @@
+.animation{
+            height: 100px;
+            width: 500px;
+            background: aqua;
+            transition: 3s all ease-in-out;
+            margin: auto;
+            margin-top: 20%;
+            animation:pagla-animation 3s infinite;
+            }
+.animation:hover{
+    background : blue!important;
+    cursor: grabbing;
+    /* height: 400px; */
+    /* transform: rotateZ(720deg) rotateY(70deg); */
+    /* transform: scale(4,5) */
+    /* transform: skew(20deg , 50deg)  */
+    /* transform: translate(1000px) rotateZ(30deg)  */
+    }
+    @keyframes pagla-animation{
+        0%{
+            background: wheat;
+        }
+        50%{    
+            background-color: black;
+            border-style: groove;
+            border-width: 70px;
+            box-shadow: 20px 50px 60px blue; 
+        }
+        75%{
+            background-color: blue;
+            
+        }
+        100%{
+            background: rgb(57, 22, 180);
+        }
+        
+    } 
+#container{
+    display: inline-block;
+    position: relative;
+}
+#text{
+    background-color: red;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    font-size: 70px;
+    position: relative;
+    transition: 4s color;
+    z-index: -16; 
+}
+#back{
+    position: absolute;
+    height: 0;
+    background-color:blue;
+    width: 100%;
+    display: inline-block;
+    z-index:1000;
+    bottom: -5px;
+}
+#text:hover{
+    color:darkgreen;
+}
