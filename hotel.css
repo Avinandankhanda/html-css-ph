@@ -38,3 +38,11 @@ img{
     height: 100%;
     object-fit: cover;
 }
+#image3{
+    height: 50%;
+    padding: 0%;
+    margin: 0%;
+}
+#second{
+    padding: 0;
+}

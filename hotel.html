@@ -52,7 +52,7 @@
                   
     </div>
     <div class="col-xs-12" id="img2l">
-            <div class="col-xs-4" id="image2">
+            <!-- <div class="col-xs-4" id="image2">
                 <img src="image5.jpg" alt="bed room">
             </div>
             <div class="col-xs-4" id="image2">
@@ -61,23 +61,89 @@
             <div class="col-xs-4" id="image2">
                 <img src="image6.jpg" alt="leaving space">
             </div>
-                        
+                         -->
     </div>
     <div class="col-xs-12" id="second">
-        <div class="col-xs-4">
+        <!-- <div class="col-xs-4" id="image3">
             <img src="image7.jpg" alt="bathroom">
         </div>
-        <div class="col-xs-4">
-            <img src="image8.jpg" alt="spa">
+        <div class="col-xs-4"  id="image3">
+            <img src="image10.jpg" alt="spa">
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-4" id="image3">
             <img src="image9.jpg" alt="pool">
-        </div>
+        </div> -->
     </div>
+    <form action="#">
+        <input type="text" name="name" placeholder="Name" id="name" required>
+        <input type="number" placeholder="Contact Number" id="number" required>
+        <input type="date" name="date" id="date" required>
+        <input type="Email" name="email" id="email" placeholder="Enter your Emali">
+        <select name="Bed Room" id="room">
+            <option value="1bhk">1BHK</option>
+            <option value="2bhk">2BHK</option>
+            <option value="3bhk">3BHK</option>
+            <option value="4bhk">4BHK</option>
+            <option value="5bhk">5BHK</option>
+        </select>
+    </form>
+    <button type="submit">Booking</button>
     <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous">
+    </script>
+    <script>
+        let hotels=[
+            {
+                name:'Mgm grand',
+                location:"Las Vegas",
+                cover_image:"https://travel.home.sndimg.com/content/dam/images/travel/fullset/2012/03/05/9b/mgm-grand.rend.hgtvcom.581.436.suffix/1491580846278.jpeg",
+                price_per_night:1000,
+                no_of_rooms:200,
+            },
+            {
+                name:'nirmal hotel',
+                location:"jhargram",
+                cover_image:"http://amarmidnapore.com/wp-content/uploads/2018/10/NIRMAL-HOTEL.jpg",
+                price_per_night:10,
+                no_of_rooms:1,
+            },
+            {
+                name:'Arnapurma hotel',
+                location:"jhargram",
+                cover_image:"https://content3.jdmagicbox.com/comp/midnapore/a5/9999p3222.3222.170929162319.u9a5/catalogue/green-park-bar-and-restaurants-jhargram-midnapore-restaurants-00b502emp9.jpg",
+                price_per_night:10,
+                no_of_rooms:1,
+            },
+            {
+                name:'Green park',
+                location:"jhargram",
+                cover_image:"http://www.jhargramtourism.com/hotels/aranyasundari01.jpg",
+                price_per_night:10,
+                no_of_rooms:1,
+            },
+        ];
+        let hotelsHtml = '';
+        hotels.forEach((hotel,index)=>{
+            hotelsHtml += `<div class="col-xs-4" id="image2">
+                                <img src=${hotel.cover_image} alt="${hotel.name}" id="${index}">
+                            </div>`;
+        });
+        const element = document.getElementById('img2l');
+        element.addEventListener('click',()=>{
+            const id = this.attributes.id;
+            let clickedhotel={}
+            hotels.forEach((hotel,index)=>{
+                if(index==id){
+                    clickedhotel=hotel;
+                }
+            });
+            alert(clickedhotel.name)
+
+        })
+        element.innerHTML = hotelsHtml;
+
     </script>
     <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
