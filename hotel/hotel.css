@@ -23,13 +23,31 @@ img{
     padding: 0%;
     height: 90vh;
 }
-#image2{
-    height: 50%;
+.image2{
     padding:0!important;
     margin: 0%!important;
+    transition: 2s all;
+    position: relative;
+}
+.image2 img{
+    height: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+.image2 p{
+    position: absolute;
+    top: 40%;
+    visibility: hidden;
+}
+.image2:hover{
+    z-index: 2;
+    transform: scale(1.2);
+}
+.image2:hover p{
+    visibility: visible;
 }
 #img2l{
-    padding: 0%;
+    padding: 0%!important;
 }
 #chhobi{
     height: 90vh;
@@ -38,11 +56,18 @@ img{
     height: 100%;
     object-fit: cover;
 }
-#image3{
+.image3{
     height: 50%;
-    padding: 0%;
-    margin: 0%;
+    padding: 0!important;
+    margin: 0;
+    transition: 2s all;
+    z-index: 1;
 }
-#second{
+.image3:hover{
+    z-index: 2;
+    transform: scale(1.4);
+}
+#img21{
     padding: 0;
+    z-index: 1;
 }
